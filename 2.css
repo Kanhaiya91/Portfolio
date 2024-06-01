@@ -1,0 +1,402 @@
+#body-head {
+    background-image: url(image/macbook_mouse.jpg);
+    height: 65vh;
+
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    background-attachment: fixed;
+}
+
+body {
+    margin: -15px;
+    overflow-x: hidden;
+}
+
+#body-head li {
+    border-bottom: none;
+    display: inline-block;
+    padding: 0px;
+
+
+}
+
+.text-center {
+    text-align: center;
+
+
+}
+
+#body-head li a {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    text-decoration: none;
+    color: white;
+
+}
+
+#body-head li a:hover {
+    color: grey;
+    text-decoration: underline;
+    transition: text-decoration 0.5sec, color 0.5 sec;
+}
+
+#profile-image {
+
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+
+}
+
+#about {
+    position: relative;
+    height: auto;
+
+}
+
+#profile-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-position: top, center;
+
+    border: 2px solid silver;
+    border-style: double;
+
+}
+
+#social-icon-name {
+    background-position: center;
+    margin-left: auto;
+    vertical-align: auto;
+    font-weight: bolder;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+#social-media li a img {
+    height: 2.5rem;
+    font-size: .1rem;
+    border-radius: 50%;
+
+    padding: 10px;
+    border-color: black;
+}
+
+#social-media li img:hover {
+    box-shadow: 0px 0px 6px 4px silver;
+}
+
+#main-section {
+
+    width: 75%
+}
+
+#main-section p {
+    font-size: large;
+
+    text-transform: capitalize;
+
+}
+
+section {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+section:nth-child(2n) {
+    background-color: white;
+}
+
+section:nth-child(2n+1) {
+    background-color: rgb(229, 232, 236);
+}
+
+/* skills */
+#skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    width: auto;
+
+}
+
+#skill-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: 70%;
+
+}
+
+#skill-div>div {
+    border: 0px solid black;
+    background-color: rgb(165, 163, 163);
+    height: 3vh;
+    font-size: small;
+    width: 20vw;
+    border-radius: 20% 20% 20% 0%;
+
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#java {
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    background-color: red;
+    color: white;
+
+}
+
+#cpp {
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(216, 25, 216);
+    color: white;
+}
+
+#html {
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+
+#css {
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+#python {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+.language-studied:hover {
+    color: hotpink;
+    box-shadow: 0px 0px 6px 4px rgb(245, 5, 17);
+}
+
+/* portfolio */
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+#portfolio h1 {
+    position: relative;
+    top: 60px;
+    font-size: 35px;
+}
+
+#portfolio-div {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 80px;
+}
+
+.portfolio-div-1 {
+    padding: 20px;
+    margin: auto;
+}
+
+.portfolio-div-2 img {
+    height: 150px;
+    width: 150px;
+    /* background-color: white; */
+}
+
+.portfolio-div-3 {
+    height: 65px;
+    width: 240px;
+    /* background-color: white; */
+}
+
+.portfolio-div-2 img:hover {
+    background-color: lightgray;
+}
+
+@media only screen and (max-width:600px) {
+
+    /* body{
+        width: 100%;
+        overflow-x: hidden;
+    
+    } */
+    #portfolio {
+        margin-top: -30rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    #portfolio-div {
+        padding: 5px;
+        width: 100%;
+        display: inline-block;
+        /* margin-left: 0rem; */
+
+
+    }
+
+    .portfolio-div-1 {
+        background-color: grey;
+        margin-top: 5px;
+        padding-left: 6px;
+        width: 35rem;
+        /* display: flex; */
+
+        margin-right: 5px;
+        height: 5rem;
+    }
+
+    .portfolio-div-2 {
+        width: 30%;
+        display: inline-block;
+        margin-left: 2px;
+        padding-left: 146px;
+        /* overflow-x: hidden; */
+    }
+
+    .portfolio-div-2 img {
+        height: 5rem;
+        width: 90%;
+
+        background-color: white;
+        position: relative;
+        left: -265px;
+
+    }
+
+    .portfolio-div-3 {
+        width: 70%;
+        display: inline-block;
+        position: relative;
+        top: -5rem;
+        left: 66px;
+        /* overflow: hidden; */
+    }
+
+    #portfolio h1 {
+        position: relative;
+        left: 2rem;
+        top: 0rem;
+    }
+
+}
+
+/* workexperience */
+.work-Experience-Section {
+    display: flex;
+    background-color: beige;
+}
+
+.work-Experience {
+    width: 20rem;
+    height: 15rem;
+    left: 17rem;
+    background-color: brown;
+    position: relative;
+}
+
+.work-Experience1 {
+    width: 20rem;
+    height: 15rem;
+    left: -17rem;
+    background-color: brown;
+    position: relative;
+}
+
+.vertical {
+    border-left: 3px dotted black;
+    height: 75rem;
+    position: absolute;
+    left: 50%;
+    margin-top: 5rem;
+}
+
+.vertical2 img {
+
+    height: 3rem;
+    width: 3rem;
+
+
+}
+
+.vertical2 {
+    position: sticky;
+    position: -webkit-sticky;
+    height: 3rem;
+    width: 3rem;
+    margin-left: -1.45rem;
+    top: 30%;
+    left: 50%;
+    margin-top: 5rem;
+}
+
+@media only screen and (max-width:600px) {
+    .vertical {
+        border-left: 3px dotted black;
+        /* display: inline-block; */
+        height: 26rem;
+        margin-top: 7rem;
+        position: relative;
+        left: -15rem;
+        top: -33rem;
+        /* margin-left: 15px; */
+    }
+
+    .vertical2 {
+        position: sticky;
+        position: -webkit-sticky;
+        height: 3rem;
+        width: 3rem;
+
+        top: 2rem;
+        left: 50%;
+        margin-top: 10px;
+
+    }
+
+    .work-Experience-2 {
+        display: inline-block;
+        width: 80%;
+        height: 5rem;
+        position: relative;
+        left: 3rem;
+        margin-top: 5px;
+        viewport-fit: 100%;
+        margin-right: 5px;
+    }
+}
